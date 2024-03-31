@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas Anidadas</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+
+        .row {
+            background: #E8E8E8;
+        }
+
+        .columna{
+            background: #F2F2F2;
+            text-align: center;
+            border: 1px solid #8D8D8D;
+        }
+
+        .columna-interior{
+            background: #E8E8E8;
+            border: 1px solid #8D8D8D;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Con col hacemos que el tamaño sea automatico y compartido entre las 2 columnas -->
+            <div class="columna col-12 col-md-6">
+                Columna 1
+                <!-- Columnas anidadas  -->
+                <div class="row">
+                    <div class="columna-interior col-12 col-md-6">
+                        Columna 1.1
+                    </div>
+                    <div class="columna-interior col-12 col-md-6">
+                        Columna 1.2
+                    </div>
+                </div>
+            </div>
+
+            <div class="columna col-12 col-md-6">
+                Columna 2
+                <!-- Columnas anidadas  -->
+                <div class="row">
+                    <div class="columna-interior col-12 col-md-6">
+                        Columna 2.1
+                    </div>
+                    <div class="columna-interior col-12 col-md-6">
+                        Columna 2.2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

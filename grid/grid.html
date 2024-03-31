@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .row > div {
+            background-color: #F2F2F2;
+            margin: 10px 0;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Todo el contenido se debe de almacenar en contenedor  -->
+    <!-- Este es el contenedor principal donde debe de estar toda la pagina -->
+    <!-- Este contenedor tiene espaciado -->
+    <!-- Si no quieres espaciado, puedes usar "container-fluid" -->
+    <div class="container">
+        <!-- Fila --- Siempre se debe de trabajar con filas -->
+
+        <!-- Los tamaños de Columna en Bootsrap 5 son:
+			.col 		Extra Pequeño (Extra Small) - Smartphones Vertical		Menos de 576px
+			.col-sm 	Pequeño (Small) - Smartphones Vertical	 				Mas de 576px y Menos de 768px
+			.col-md 	Mediano (Medium) - Tablets 								Mas de 768px y Menos de 992px
+			.col-lg 	Largo (Large) - Computadoras							Mas de 992px y Menos de 1200px
+			.col-xl 	Extra Largo (Extra Large) - Computadoras				Mas de 1200px
+			.col-xxl 	Extra Extra Largo (Extra Extra Large) - Televisiones 	Mas de 1400px
+		-->
+        <div class="row">
+            <!-- Columna --- Y con columnas dentro -->
+            <!-- Recordar que hay 12 columnas en una pagina -->
+            <!-- Puedes cambiar el tamaño de la columna con "col-" seguido de un número del 1-12 -->
+            <!-- Para agregar la parte responsiva se debe especificar el numero de columnas con base a los tamaños anteriores -->
+            <!-- Si se saltan tamaños, las configuraciones se aplican a las demás hacia abajp hasta que haya una nueva -->
+            <div class="col-12 col-sm-6">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione temporibus sit repudiandae non porro. Perspiciatis quaerat corrupti laborum voluptas explicabo soluta, iste esse repudiandae impedit. Eaque blanditiis fugit placeat ipsam.</p>
+                <!-- Boton de bootstrap - btn -->
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione temporibus sit repudiandae non porro. Perspiciatis quaerat corrupti laborum voluptas explicabo soluta, iste esse repudiandae impedit. Eaque blanditiis fugit placeat ipsam.</p>
+                <!-- Boton de bootstrap - btn -->
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+
+            <div class="col-12">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione temporibus sit repudiandae non porro. Perspiciatis quaerat corrupti laborum voluptas explicabo soluta, iste esse repudiandae impedit. Eaque blanditiis fugit placeat ipsam.</p>
+                <!-- Boton de bootstrap - btn -->
+                <button class="btn btn-primary">Ver más</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

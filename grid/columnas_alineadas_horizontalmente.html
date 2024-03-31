@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas alineadas horizontalmente</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .row {
+            background: #E8E8E8;
+            margin-top: 20px;
+        }
+
+        .columna {
+            background: #F2F2F2;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #4D5061;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Alineación horizontal -->
+        <!-- justify-content-start alinea las columnas al inicio(izquierda) -->
+        <div class="row justify-content-start">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+
+        <!-- justify-content-center alinea las columnas al centro -->
+        <div class="row justify-content-center">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+
+        <!-- justify-content-end alinea las columnas al final(derecha) -->
+        <div class="row justify-content-end">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+
+        <!-- justify-content-around alinea las columnas con espacios alrededor -->
+        <div class="row justify-content-around">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+
+        <!-- justify-content-between alinea las columnas con espacios entre ellas -->
+        <div class="row justify-content-between">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+
+        <!-- justify-content-evenly alinea las columnas con espacios iguales entre ellas -->
+        <div class="row justify-content-evenly">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
