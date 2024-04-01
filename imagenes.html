@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <!--Con img-fluid hacemos que la imagen ocupe el 100% del espacio disponible de las columnas-->
+                <img class="img-fluid" src="img/carousel1.jpg" alt="carousel1">
+            </div>
+
+            <hr>
+
+            <div class="col-12">
+                <!--Con img-thumbnail hacemos que la imagen tenga un borde redondeado-->
+                <!--Con float-start y float-end podemos alinear las imágenes a la izquierda y derecha respectivamente-->
+                <img src="img/bg.jpg" alt="bg" width="400px" class="img-fluid float-start img-thumbnail">
+                <img src="img/bg2.jpg" alt="bg2" width="400px" class="img-fluid float-end img-thumbnail">
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <figure class="figure">
+                        <!--Con rounded hacemos que la imagen tenga las esquinas redondeadas-->
+                        <img class="img-fluid rounded" src="img/bg3.jpg" alt="bg3" width="400px">
+                        <!--Con figcaption podemos agregar un pie de foto a la imagen-->
+                        <figcaption class="figure-caption">
+                            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

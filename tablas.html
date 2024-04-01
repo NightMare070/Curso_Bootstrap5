@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Colores -->
+				<!-- Tenemos variantes disponibles para toda la tabla, toda una fila, o una celda -->
+				<!-- 
+					.table-primary
+					.table-secondary
+					.table-success
+					.table-danger
+					.table-warning
+					.table-info
+
+					.table-light
+					.table-dark
+				-->
+
+
+				<!-- Clases de tablas -->
+				<!-- Estas clases tambien estan disponbiles para los diferentes colores -->
+				<!-- 
+					.table-striped - Colorea en formato zebra para mejor lectura.
+					.table-hover - Colorea las filas sobre las que pasamos el cursor.
+					.table-bordered - Agrega bordes a la tabla.
+					.border-danger - Colorea el borde.
+					.table-borderless - Quita los bordes, incluso de las filas.
+					.table-sm - Hace una tabla mas compacta quitandole padding a las celdas
+				-->
+
+                <!--Con table-responsive hacemos que la tabla sea responsiva agregando un scroll-->
+                <div class="table-responsive">
+                    <!--Con table-striped cambia el color de las filas impares-->
+                    <!--Con table-hover cambia el color de la fila al pasar el cursor sobre ella-->
+                    <!--Con table-sm hacemos que la tabla sea más compacta-->
+                    <table class="table table-striped table-hover table-sm table-bordered">
+                        <!--Con caption podemos agregar una leyenda a la tabla-->
+                        <caption>Lista de amigos</caption>
+                        <thead>
+                            <!--Con table-dark cambia a colores de las filas-->
+                            <tr class="table-dark">
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>País</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan</td>
+                                <td>25</td>
+                                <td>México</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td>María</td>
+                                <!--Con table-active cambia el color de la celda al color del hover siempre-->
+                                <td>30</td>
+                                <td>Colombia</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos</td>
+                                <td>20</td>
+                                <td>Argentina</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
