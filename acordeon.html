@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeon</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--Con mt-4 agregamos un margen superior-->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="accordion accordion-flush" id="temario">
+                    <!--Primer elemento-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado_1">
+                            <buttom
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#elemento_1"
+                                aria-expanded="true"
+                                aria-controls="elemento_1"
+                            >
+                                Capítulo #1
+                            </buttom>
+                        </h2>
+
+                        <div
+                            id="elemento_1"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="encabezado_1"
+                            data-bs-parent="#temario"
+                        >
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore voluptas consequuntur ullam quae corporis error, beatae facere ex voluptatibus incidunt distinctio mollitia ipsum facilis voluptatem et aperiam est veniam.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Segundo elemento-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado_2">
+                            <buttom
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#elemento_2"
+                                aria-expanded="true"
+                                aria-controls="elemento_2"
+                            >
+                                Capítulo #2
+                            </buttom>
+                        </h2>
+
+                        <div
+                            id="elemento_2"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="encabezado_2"
+                            data-bs-parent="#temario"
+                        >
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eos necessitatibus consequatur aperiam facere autem, maxime blanditiis! Quo est id ratione maxime consequatur, a officiis, hic nemo, sit tempore nisi!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tercero elemento-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="encabezado_3">
+                            <buttom
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#elemento_3"
+                                aria-expanded="true"
+                                aria-controls="elemento_3"
+                            >
+                                Capítulo #3
+                            </buttom>
+                        </h2>
+
+                        <div
+                            id="elemento_3"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="encabezado_3"
+                            data-bs-parent="#temario"
+                        >
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum sed rem quidem adipisci repudiandae ea quos nisi corporis commodi pariatur tempora soluta consectetur illo quaerat libero dolor esse, eligendi itaque!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
